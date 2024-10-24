@@ -1,0 +1,125 @@
+:root {  
+    --cyandark: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --darkblue: hsl(212, 21%, 14%);
+    --darkgray: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.addToCart {
+    background-color: var(--cyandark);
+    border-radius: .5rem;
+	max-width: 80%;
+	padding: 1rem;
+	margin-bottom: 1rem;
+    font-weight: 700;
+    font-size:14px;
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.addToCart:hover {
+    background-color: var(--darkblue);
+}
+
+body {
+    background-color: var(--cream);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.container > :first-child {
+    flex-basis:350px;
+    border-top-left-radius: .625rem;
+    border-bottom-left-radius: .625rem;
+}
+
+.container > :last-child {
+    flex-basis: 350px;
+    border-top-right-radius: .625rem;
+    border-bottom-right-radius: .625rem;
+}
+  
+.column {
+    background-color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: middle;
+}
+
+h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+img {
+    max-width: 100%;
+    border-top-left-radius: .625rem;
+    border-bottom-left-radius: .625rem;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--darkgray);
+    line-height: 1.4rem;
+    letter-spacing: .1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+p:first-of-type {
+    margin-top: 2rem;
+}
+
+.prices {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.sellPrice {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--cyandark);
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+}
+
+.origPrice {
+    text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+    .container > .column:first-child {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: .625rem;
+    }
+  
+    .container > img {
+      border-top-left-radius: .625rem;
+      border-top-right-radius: .625rem;
+    }
+  
+    .container > .column:last-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: .625rem;
+      border-bottom-left-radius: .625rem;
+    }
+  }
